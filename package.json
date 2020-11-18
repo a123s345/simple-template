@@ -1,0 +1,60 @@
+{
+  "name": "buildemployee",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "preview": "node build/index.js --preview"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "echarts": "^4.9.0",
+    "element-ui": "^2.13.2",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "vue": "^2.6.12",
+    "vue-echarts": "^5.0.0-beta.0",
+    "vue-router": "^3.4.7",
+    "vuex": "^3.5.1",
+    "vuex-persistedstate": "^4.0.0-beta.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.8",
+    "@vue/cli-plugin-eslint": "~4.5.8",
+    "@vue/cli-plugin-router": "~4.5.8",
+    "@vue/cli-plugin-vuex": "~4.5.8",
+    "@vue/cli-service": "~4.5.8",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "axios": "^0.20.0",
+    "babel-eslint": "^10.1.0",
+    "chalk": "^4.1.0",
+    "connect": "^3.7.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.2",
+    "eslint-plugin-vue": "^7.1.0",
+    "filemanager-webpack-plugin": "^3.0.0-alpha.2",
+    "http-server": "^0.12.3",
+    "lint-staged": "^10.4.2",
+    "node-sass": "^4.14.1",
+    "runjs": "^4.4.2",
+    "sass-loader": "^10.0.4",
+    "serve-static": "^1.14.1",
+    "vue-cli-plugin-axios": "^0.0.4",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

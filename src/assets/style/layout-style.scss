@@ -1,0 +1,14 @@
+@import "~@/assets/style/mixin-style.scss";
+
+&{
+  display: flex;
+  @include flex-mixin(column,flex-start,stretch);
+  &-search-form{
+    padding: 20px 10px;
+    box-sizing: border-box;
+    flex: none;
+  }
+  &-table,&-charts{
+    flex: auto;
+  }
+}

@@ -1,0 +1,77 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+@import "base-style";
+$--color-primary: $--color-primary;
+$--color-success:$--color-success;
+
+$--table-header-font-color:#666666;
+$--table-header-background-color:#F8F9FE;
+
+$--header-padding:0 10px;
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";
+@import "./mixin-style";
+
+
+
+.long-button{
+  width: 100%;
+}
+.border-button{
+  background-color: #ffffff;
+  color: $--color-success;
+}
+
+.iconfont--left{
+  margin-right: 5px;
+}
+.iconfont--right{
+  margin-left: 5px;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+  background-color: $--color-secondary;
+}
+.el-pagination.is-background .el-pager li {
+  color: #B5B8C6;
+}
+
+.el-form{
+  &-item{
+    &__label{
+      font-size: 14px;
+      font-weight: 400;
+      color: #333333;
+      word-break: keep-all;
+      white-space: nowrap;
+    }
+    &__content{
+      .el-date-editor{
+        width: 100%;
+      }
+      .el-select{
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.el-form.text-space-between{
+  .el-form-item__label{
+    text-align: justify;
+    text-align-last: justify;
+  }
+}
+.empty-text-p{
+  margin: 0;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #999999;
+}
